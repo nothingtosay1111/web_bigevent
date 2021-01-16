@@ -46,7 +46,7 @@ $(function() {
                     return layer.msg(res.message)
                 }
                 // 提交成功后处理
-                layer.mas('注册成功');
+                layer.msg('注册成功');
                 // 手动切换到登录表单
                 $("#link_login").click();
                 // 重置form表单
@@ -65,7 +65,7 @@ $(function() {
             data: $(this).serialize(),
             success: function(res) {
                 if (res.status !== 0) {
-                    return layer.mag(res.message)
+                    return layer.msg(res.message)
                 }
                 // 提示信息,保存token 跳转页面
                 layer.msg('恭喜您,登录成功');
